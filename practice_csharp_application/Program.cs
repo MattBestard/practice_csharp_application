@@ -10,27 +10,13 @@ namespace practice_csharp_application
     {
         static void Main(string[] args)
         {
-            int i = 0;
+            string guess;
 
-            while (i < 10)
+            do
             {
-                if (i == 7)
-                {
-                    i++;
-                    continue;
-                }
-
-                if (i ==9)
-                {
-                    break;
-                }
-
-                if ((i % 2) > 0)
-                {
-                    Console.WriteLine(i);
-                }
-                i++;
-            }
+                Console.WriteLine("Guess a Number");
+                guess = Console.ReadLine();
+            } while (!guess.Equals("15"));
         }
     }
 }
