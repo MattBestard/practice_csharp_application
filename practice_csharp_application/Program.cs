@@ -10,7 +10,27 @@ namespace practice_csharp_application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("5 + 3 = " + (5 + 3));
+            int i = 0;
+
+            while (i < 10)
+            {
+                if (i == 7)
+                {
+                    i++;
+                    continue;
+                }
+
+                if (i ==9)
+                {
+                    break;
+                }
+
+                if ((i % 2) > 0)
+                {
+                    Console.WriteLine(i);
+                }
+                i++;
+            }
         }
     }
 }
