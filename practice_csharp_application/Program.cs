@@ -10,13 +10,13 @@ namespace practice_csharp_application
     {
         static void Main(string[] args)
         {
-            string guess;
-
-            do
+           for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Guess a Number");
-                guess = Console.ReadLine();
-            } while (!guess.Equals("15"));
+                if ((i % 2) > 0 )
+                {
+                    Console.WriteLine(i);
+                }
+            }
         }
     }
 }
