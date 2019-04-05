@@ -12,11 +12,13 @@ namespace practice_csharp_application
         {
             string sampString = "A bunch of random words";
 
-            Console.WriteLine("Is empty " + String.IsNullOrEmpty(sampString));
+            string sampString2 = "More random words";
 
-            Console.WriteLine("Is empty " + String.IsNullOrWhiteSpace(sampString));
+            Console.WriteLine("Strings Equal " + sampString.Equals(sampString2));
 
-            Console.WriteLine("String length " + sampString.Length);
+            Console.WriteLine("Starts with \"A bunch\" " + sampString.StartsWith("A bunch"));
+
+            Console.WriteLine("Ends with words " + sampString.EndsWith("words"));
         }
     }
 }
