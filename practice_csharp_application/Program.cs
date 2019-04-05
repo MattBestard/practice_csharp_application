@@ -10,12 +10,13 @@ namespace practice_csharp_application
     {
         static void Main(string[] args)
         {
-            string randStr = "Here are some random character";
+            string sampString = "A bunch of random words";
 
-            foreach(char c in randStr)
-            {
-                Console.WriteLine(c);
-            }
+            Console.WriteLine("Is empty " + String.IsNullOrEmpty(sampString));
+
+            Console.WriteLine("Is empty " + String.IsNullOrWhiteSpace(sampString));
+
+            Console.WriteLine("String length " + sampString.Length);
         }
     }
 }
