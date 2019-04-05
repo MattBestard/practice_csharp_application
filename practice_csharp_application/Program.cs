@@ -10,12 +10,11 @@ namespace practice_csharp_application
     {
         static void Main(string[] args)
         {
-           for (int i = 0; i < 10; i++)
+            string randStr = "Here are some random character";
+
+            foreach(char c in randStr)
             {
-                if ((i % 2) > 0 )
-                {
-                    Console.WriteLine(i);
-                }
+                Console.WriteLine(c);
             }
         }
     }
