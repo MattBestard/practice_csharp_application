@@ -10,24 +10,11 @@ namespace practice_csharp_application
     {
         static void Main(string[] args)
         {
-            int[] randNumArray;
+            int[] longArr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
 
-            int[] randArray = new int[5];
-
-            int[] randArray2 = { 1, 2, 3, 4, 5 };
-
-            Console.WriteLine("Array Length " + randArray2.Length);
-
-            Console.WriteLine("Item 0 " + randArray2[0]);
-
-            for (int i = 0; i < randArray2.Length; i++)
+            for (int i = 0; i < longArr.Length; i++)
             {
-                Console.WriteLine("{0} : {1}", i, randArray2[i]);
-            }
-
-            foreach(int num in randArray2)
-            {
-                Console.WriteLine(num);
+                Console.WriteLine(longArr[i]);
             }
         }
     }
