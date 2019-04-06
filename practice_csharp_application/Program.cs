@@ -10,13 +10,25 @@ namespace practice_csharp_application
     {
         static void Main(string[] args)
         {
-            string sampString = "A bunch of random words";
+            int[] randNumArray;
 
-            string sampString2 = "More random words";
+            int[] randArray = new int[5];
 
-            string fmtStr = String.Format("{0:c} {1:00.00} {2:#.00} {3:00,0}", 1.56, 15.567, .56, 1000);
+            int[] randArray2 = { 1, 2, 3, 4, 5 };
 
-            Console.WriteLine(fmtStr);
+            Console.WriteLine("Array Length " + randArray2.Length);
+
+            Console.WriteLine("Item 0 " + randArray2[0]);
+
+            for (int i = 0; i < randArray2.Length; i++)
+            {
+                Console.WriteLine("{0} : {1}", i, randArray2[i]);
+            }
+
+            foreach(int num in randArray2)
+            {
+                Console.WriteLine(num);
+            }
         }
     }
 }
