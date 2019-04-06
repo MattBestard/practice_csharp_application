@@ -14,11 +14,9 @@ namespace practice_csharp_application
 
             string sampString2 = "More random words";
 
-            Console.WriteLine("Strings Equal " + sampString.Equals(sampString2));
+            string fmtStr = String.Format("{0:c} {1:00.00} {2:#.00} {3:00,0}", 1.56, 15.567, .56, 1000);
 
-            Console.WriteLine("Starts with \"A bunch\" " + sampString.StartsWith("A bunch"));
-
-            Console.WriteLine("Ends with words " + sampString.EndsWith("words"));
+            Console.WriteLine(fmtStr);
         }
     }
 }
